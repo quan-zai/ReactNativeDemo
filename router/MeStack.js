@@ -1,5 +1,5 @@
 import { createStackNavigator } from 'react-navigation';
-import MeScreen from '../src/screens/MeScreen'
+import MeScreen from '../src/screens/Me/MeScreen'
 export default MeStack = createStackNavigator(
     {
         Me: MeScreen,

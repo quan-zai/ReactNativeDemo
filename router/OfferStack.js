@@ -1,5 +1,5 @@
 import { createStackNavigator } from 'react-navigation';
-import OfferScreen from '../src/screens/OfferScreen'
+import OfferScreen from '../src/screens/Offer/OfferScreen'
 export default OfferStack = createStackNavigator(
     {
         Offer: OfferScreen,

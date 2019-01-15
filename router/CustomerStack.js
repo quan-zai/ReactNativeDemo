@@ -1,5 +1,5 @@
 import { createStackNavigator } from 'react-navigation';
-import CustomerScreen from '../src/screens/CustomerScreen'
+import CustomerScreen from '../src/screens/Customer/CustomerScreen'
 export default CustomerStack = createStackNavigator(
     {
         Customer: CustomerScreen,
