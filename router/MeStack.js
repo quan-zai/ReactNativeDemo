@@ -1,18 +1,18 @@
 import { createStackNavigator } from 'react-navigation';
-import MeScreen from '../src/screens/Me/MeScreen'
+import Me from '../src/screens/Me/Me'
 export default MeStack = createStackNavigator(
     {
-        Me: MeScreen,
+        Me: Me,
     },
     {
         initialRouteName: 'Me',
         defaultNavigationOptions: {
             headerStyle: {
-            backgroundColor: '#f4511e',
+                backgroundColor: '#f4511e',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
-            fontWeight: 'bold',
+                fontWeight: 'bold',
             },
         },
     }

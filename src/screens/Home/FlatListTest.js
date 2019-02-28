@@ -4,14 +4,14 @@ import {
   Text,
   Button
 } from 'react-native';
-export default class MeScreen extends Component {
+export default class FlatListTest extends Component {
   static navigationOptions = {
-    title: 'Me'
+    title: 'FlatListTest'
   }
   render () {
     return (
       <View>
-        <Text>我的</Text>
+        <Text></Text>
       </View>
     )
   }

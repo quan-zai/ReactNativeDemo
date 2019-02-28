@@ -5,7 +5,7 @@ import {
   Button,
   FlatList
 } from 'react-native';
-export default class HomeScreen extends Component {
+export default class Home extends Component {
   static navigationOptions = {
     title: 'Home',
     headerRight: (
@@ -21,12 +21,13 @@ export default class HomeScreen extends Component {
     super(props);
     this.state = {
       data: [
-        { title: 'SearchBar' },
-        { title: '1' },
-        { title: '2' },
-        { title: '3' },
-        { title: '4' },
-        { title: '5' },
+        { title: 'Basic', type: 'Basic' },
+        { title: 'PlatformCode', type: 'PlatformCode' },
+        { title: 'Gesture',  type: 'Gesture' },
+        { title: 'Animation',  type: 'Animation' },
+        { title: 'NativeiOS',  type: 'NativeiOS' },
+        { title: 'NativeAndroid',  type: 'NativeAndroid' },
+        { title: 'FlatListTest',  type: 'FlatListTest' },
       ]
     }
   }
@@ -44,7 +45,7 @@ export default class HomeScreen extends Component {
       <View>
         <FlatList data={data}
                   renderItem={this.renderItem}
-                  keyExtractor={(item, index) => index}
+                  keyExtractor={(item, index) => String(index)}
         />
       </View>
     )

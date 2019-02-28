@@ -1,18 +1,18 @@
 import { createStackNavigator } from 'react-navigation';
-import CustomerScreen from '../src/screens/Customer/CustomerScreen'
+import Customer from '../src/screens/Customer/Customer'
 export default CustomerStack = createStackNavigator(
     {
-        Customer: CustomerScreen,
+        Customer: Customer,
     },
     {
         initialRouteName: 'Customer',
         defaultNavigationOptions: {
             headerStyle: {
-            backgroundColor: '#f4511e',
+                backgroundColor: '#f4511e',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
-            fontWeight: 'bold',
+                fontWeight: 'bold',
             },
         },
     }

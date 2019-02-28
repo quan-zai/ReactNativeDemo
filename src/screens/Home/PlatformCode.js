@@ -1,16 +1,17 @@
 import React, {Component} from 'react';
 import {
   View,
-  Text
+  Text,
+  Button
 } from 'react-native';
-export default class OfferScreen extends Component {
+export default class PlatformCode extends Component {
   static navigationOptions = {
-    title: 'Offer'
+    title: 'PlatformCode'
   }
   render () {
     return (
       <View>
-        <Text>车险报价</Text>
+        <Text></Text>
       </View>
     )
   }

@@ -1,16 +1,17 @@
 import React, {Component} from 'react';
 import {
   View,
-  Text
+  Text,
+  Button
 } from 'react-native';
-export default class CustomerScreen extends Component {
+export default class Me extends Component {
   static navigationOptions = {
-    title: 'Customer'
+    title: 'Me'
   }
   render () {
     return (
       <View>
-        <Text>客户管理</Text>
+        <Text></Text>
       </View>
     )
   }
