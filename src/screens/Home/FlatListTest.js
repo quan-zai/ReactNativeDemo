@@ -81,6 +81,10 @@ export default class FlatListTest extends Component {
     }, 3000);
   }
 
+  randomHeight = () => {
+    return Math.random() * 200;
+  }
+
   render() {
     if (!this.state.loaded) {
       return this.renderLoadingView();
@@ -110,11 +114,11 @@ export default class FlatListTest extends Component {
     );
   }
 
-  renderMovie({ item }) {
+  renderMovie = ({ item }) => {
     // { item }是一种“解构”写法，请阅读ES2015语法的相关文档
     // item也是FlatList中固定的参数名，请阅读FlatList的相关文档
     return (
-      <View style={styles.container}>
+      <View style={{...styles.container, height: this.randomHeight()}}>
         <Image
           source={{ uri: item.posters.thumbnail }}
           style={styles.thumbnail}
