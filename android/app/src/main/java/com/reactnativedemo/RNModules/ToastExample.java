@@ -74,7 +74,7 @@ public class ToastExample extends ReactContextBaseJavaModule{
     @ReactMethod
     public void textAndroidPromiseMethod(String msg, Promise promise){
         Toast.makeText(getReactApplicationContext(),msg,Toast.LENGTH_SHORT).show();
-        String result="谢汉杰";
+        String result="quanzai";
         promise.resolve(result);
     }
 

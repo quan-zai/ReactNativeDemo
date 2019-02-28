@@ -53,7 +53,7 @@ export default class Basic extends Component {
         data={this.state.data}
         renderItem={this.renderMovie}
         style={styles.list}
-        keyExtractor={item => item.id}
+        keyExtractor={item => String(item.id)}
       />
     );
   }

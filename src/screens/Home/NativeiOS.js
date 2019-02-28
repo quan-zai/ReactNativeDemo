@@ -8,6 +8,7 @@ import {
   StyleSheet
 } from 'react-native';
 var CalendarManager = NativeModules.CalendarManager;
+console.log('calendarmanager ==== ', CalendarManager)
 class CustomButton extends React.Component {
   render() {
     return (
@@ -29,10 +30,10 @@ export default class NativeiOS extends Component {
       <View>
         <Text>封装iOS原生模块</Text>
         <CustomButton text="点击调用原生模块addEvent方法"
-            onPress={()=>CalendarManager.addEvent('生日聚会', '江苏南通 中天路')}
+            onPress={()=>CalendarManager.addEvent('约会', '上海市 南京路')}
         />
         <CustomButton text="点击调用原生模块test方法"
-            onPress={()=>CalendarManager.test('hehe')}
+            onPress={()=>CalendarManager.test('test')}
         />
       </View>
     )
